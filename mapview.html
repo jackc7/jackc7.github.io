@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<style>
+html *
+{
+   font-size: 1em !important;
+   color: #000 !important;
+   font-family: Arial, Helvetica, sans-serif !important;
+}
+
+</style>
+
+<div class="header">
+  <div class="default">
+    <a href="index.html">List View</a>
+    <a class="active" href="#contact">Map View</a>
+  </div>
+</div>
+
+
+<meta charset="utf-8">
+<title>MA Ski Resorts</title>
+<link href="./assets/css/list.css" rel="tylesheet" type="text/css">
+<link href="./assets/css/header.css" rel="stylesheet" type="text/css">
+<link href="./assets/css/responsive.css" rel="stylesheet" type="text/css">
+<link href="./assets/css/button.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<style>
+    .google-maps {
+        position: relative;
+        padding-bottom: 150%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+    }
+    .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+</style>
+
+<div class="google-maps">
+  <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1D6ceNB69j2J9XIuYYljPO1mDjSRuqdFU" width="600" height="450" frameborder="0" style="border:0"></iframe>
+</div>
+
+</body>
+
+<script src="./assets/scripts/list.js"></script>
+<script src="./assets/scripts/geolocation.js"></script>
+</html>
